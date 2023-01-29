@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
           child: Container(
-        child: Text("Ram Ram Ji by $name "),
+        child: Text("Ram Ram Ji \n by $name"),
       )),
       drawer: Drawer(
         child: Text("Hello"),
