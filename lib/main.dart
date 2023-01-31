@@ -15,11 +15,13 @@ class MyApp extends StatelessWidget {
         // home: HomePage(),
         themeMode: ThemeMode.light,
         theme: ThemeData(
-          primarySwatch: Colors.indigo,
+          primarySwatch: Colors.deepPurple,
           fontFamily: GoogleFonts.lato().fontFamily,
         ),
         darkTheme: ThemeData(brightness: Brightness.dark),
-        initialRoute: "/login",
+        //For Removing the "Debug Banner"
+        debugShowCheckedModeBanner: false,
+        initialRoute: MyRoutes.homeRoute,
         routes: {
           "/": (context) => LoginPage(),
           MyRoutes.loginRoute: (context) => LoginPage(),
