@@ -16,5 +16,6 @@ final products = [
     desc: "Apple IPhone 12th Generation",
     price: 999,
     color: "#33505a",
+    image: "google.com",
   )
 ];
