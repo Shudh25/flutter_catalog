@@ -1,3 +1,17 @@
+class catalogModel {
+  static final items = [
+    Item(
+      id: "Codepur001",
+      name: "IPhone 12 Pro",
+      desc: "Apple IPhone 12th Generation",
+      price: 999,
+      color: "#33505a",
+      image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISJ6msIu4AU9_M9ZnJVQVFmfuhfyJjEtbUm3ZK11_8IV9TV25-1uM5wHjiFNwKy99w0mR5Hk&usqp=CAc",
+    )
+  ];
+}
+
 class Item {
   final String id;
   final String name;
@@ -6,16 +20,11 @@ class Item {
   final String color;
   final String image;
 
-  Item({this.id, this.name, this.desc, this.price, this.color, this.image});
-}
-
-final products = [
   Item(
-    id: "Codepur001",
-    name: "IPhone 12 Pro",
-    desc: "Apple IPhone 12th Generation",
-    price: 999,
-    color: "#33505a",
-    image: "google.com",
-  )
-];
+      {required this.id,
+      required this.name,
+      required this.desc,
+      required this.price,
+      required this.color,
+      required this.image});
+}
